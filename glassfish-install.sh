@@ -7,6 +7,7 @@
 #tested-version  :4.1.1
 #tested-distros  :Debian 8; Ubuntu 16.04; CentOS 7; Fedora 23
 #script-version  :0.0.1
+#./asadmin --host localhost --port 41855 enable-secure-admin
 
 if [[ $EUID -ne 0 ]]; then
    echo "This script must be run as root."
