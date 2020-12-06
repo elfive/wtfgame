@@ -2990,8 +2990,8 @@ DialogBubble.prototype.show = function(dialog, uuid) {
 
     if(!SoundManager.instance.mute){
     	var audio = document.getElementById("audio");
-       audio.src = 'http://tts.baidu.com/text2audio?lan=zh&pid=101&ie=UTF-8&idx=1&tex=' + encodeURI(dialog) + '&per=' + (uuid % 4) + '&ctp=1&cuid=1&pdt=1';
-    //audio.src = 'http://tts.baidu.com/text2audio?lan=zh&pid=101&ie=UTF-8&text=' + encodeURI(dialog) + '&spd=5';
+       audio.src = '//tts.baidu.com/text2audio?lan=zh&pid=101&ie=UTF-8&idx=1&tex=' + encodeURI(dialog) + '&per=' + (uuid % 4) + '&ctp=1&cuid=1&pdt=1';
+    //audio.src = '//tts.baidu.com/text2audio?lan=zh&pid=101&ie=UTF-8&text=' + encodeURI(dialog) + '&spd=5';
         audio.play();
     }
 	self.gameObject.visible = true;
